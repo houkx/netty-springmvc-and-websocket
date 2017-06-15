@@ -26,4 +26,14 @@ public class SampleController {
 		player.play();
 		return "Hello World! I am netty-springmvc !";
 	}
+
+	@RequestMapping("/r")
+	String testRedirect() {
+		return "redirect:/rdnew";
+	}
+
+	@RequestMapping("/rdnew")
+	String rdnew() {
+		return "rd";
+	}
 }
